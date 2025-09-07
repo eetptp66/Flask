@@ -1,0 +1,18 @@
+# 1. Git 저장소 초기화 (프로젝트를 Git이 관리하도록 설정)
+git init
+
+# 2. .gitignore 파일에 지정된 파일을 제외하고 모든 파일을 Git에 추가
+git add .
+
+# 3. 추가된 파일들을 "Initial commit" 메시지와 함께 저장
+git commit -m "Initial commit"
+
+# 4. GitHub에 만든 저장소와 로컬 프로젝트 연결
+#    'YOUR_USERNAME'과 'YOUR_REPO_NAME'을 본인의 GitHub 정보로 변경하세요.
+git remote add origin https://github.com/eetptp66/Flask.git
+
+# 5. 기본 브랜치 이름을 'main'으로 변경
+git branch -M main
+
+# 6. 로컬 프로젝트를 GitHub로 업로드 (최종 업로드)
+git push -u origin main
